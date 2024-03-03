@@ -68,6 +68,30 @@
 // var usmanpercentage = percentage(22 , 33 , 45 , 80);
 // console.log(usmanpercentage);
 
+var head = document.querySelector('.head');
+console.log(head.innerHTML);
+head.innerHTML = 'changed through js'
+console.log(head.innerHTML);
+
+var para = document.querySelector('#para');
+console.log(para.innerHTML);
+para.innerHTML = 'changed through js'
+console.log(para.innerHTML);
 
 
 
+
+
+
+
+function changetext(){
+para.innerHTML = 'changed through js'
+head.innerHTML = 'changed through js'
+if(para.innerHTML === 'changed through js' && head.innerHTML === 'changed through js'){
+    para.innerHTML = ' Lorem ipsum dolor sit.'
+    head.innerHTML = 'Hello Functions'
+}else{
+    para.innerHTML = 'changed through js'
+    head.innerHTML = 'changed through js'
+}
+}
